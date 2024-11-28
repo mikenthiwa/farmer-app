@@ -1,0 +1,18 @@
+
+
+<div class="login-form-container">
+  <p>WELCOME TO</p>
+  <h6>Inua Mkulima - <br> <span>Subsidy Program</span></h6>
+
+  <div class="login-form">
+    <small>{{ loginForm().title}}</small>
+    <mat-form-field appearance="fill">
+      <mat-label>{{ loginForm().label }}</mat-label>
+      <input matInput [(ngModel)]="formValue">
+    </mat-form-field>
+      <button mat-flat-button [disabled]="!formValue" (click)="onSubmit()">
+          <mat-icon iconPositionEnd class="icon">chevron_right</mat-icon>
+          <span>{{ loginForm().button }}</span>
+      </button>
+  </div>
+</div>
